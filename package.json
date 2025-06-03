@@ -1,0 +1,27 @@
+{
+  "name": "pl-upgrade-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js",
+    "dev:testGar": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression='@testGar'",
+    "dev:smokeTest": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression='@smoketest'",
+    "dev:regression": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression='@regression'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@wdio/allure-reporter": "^9.2.2",
+    "@wdio/cli": "^9.2.10"
+  },
+  "devDependencies": {
+    "webdriverio": "^7.0.0",
+    "@cucumber/cucumber": "^11.0.1",
+    "@wdio/cucumber-framework": "^9.2.8",
+    "@wdio/local-runner": "^9.2.8"
+  }
+}
