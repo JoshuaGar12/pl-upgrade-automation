@@ -41,7 +41,8 @@ class SportPickerPage {
       );
     }
     async testfunc() {
-      await browser.pause(5000);
+     // await browser.pause(5000);
+     console.log('testfunc called');
     }
   }
   
