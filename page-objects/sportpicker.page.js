@@ -40,6 +40,9 @@ class SportPickerPage {
         `//*[@id="section-design-type"]/div[1]/div[1]//*[text()="${formattedSport}"]`
       );
     }
+    async testfunc() {
+      await browser.pause(5000);
+    }
   }
   
   export default new SportPickerPage();

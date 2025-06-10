@@ -58,7 +58,6 @@ class DesignPickerPage {
       console.warn("Not enough color options to select 6 different ones.");
       return;
     }
-
     // Create an array to store unique random indices
     let selectedIndices = [];
 
